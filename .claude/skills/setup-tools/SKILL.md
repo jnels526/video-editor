@@ -22,7 +22,7 @@ and use the correct ID. After installing, tell the owner they may need to **clos
 so Windows can find the new programs, then pick up where you left off.
 
 ## 2. Whisper (word-level timestamps)
-`python -m pip install --upgrade faster-whisper`
+`python -m pip install --upgrade faster-whisper "av<19"` (PyAV 19 breaks faster-whisper 1.2.1; see SETUP.md)
 The model downloads into `models/` on the drive, not the laptop.
 
 ## 3. Remotion (graphics and captions in code)
