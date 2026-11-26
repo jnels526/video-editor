@@ -20,4 +20,4 @@ Install-App "yt-dlp.yt-dlp"        "yt-dlp (downloads reference videos)"
 
 Write-Host "`nAll installs attempted." -ForegroundColor Green
 Write-Host "IMPORTANT: close this window and open a NEW terminal so Windows can find the new programs." -ForegroundColor Yellow
-Write-Host "Then run:  python -m pip install faster-whisper"
+Write-Host "Then run:  python -m pip install faster-whisper `"av<19`""

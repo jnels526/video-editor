@@ -28,16 +28,28 @@ Whisper model sizes (downloaded once to `models/` on the drive):
 
 | Tool | Version | Test | Result | Date | Notes |
 |---|---|---|---|---|---|
-| FFmpeg | | 3-second 1080x1920 test video | | | |
-| Whisper | | Transcribe 5 seconds of audio with word timestamps | | | |
-| yt-dlp | | Download one short public video | | | |
-| Remotion | | Render a 3-second composition | | | |
-| HyperFrames | | Render a 3-second title card | | | |
+| FFmpeg | 9.1 (gyan.dev full build) | 3-second 1080x1920 test video | Pass | 2026-11-26 | Video + audio, 3.0 s |
+| Whisper | faster-whisper 1.2.1 (Python 3.12.10, PyAV 18.1.1) | Transcribe 5 seconds of audio with word timestamps | Pass | 2026-11-26 | Windows text-to-speech clip, `base` model, 12 words with timestamps |
+| yt-dlp | 2026.11.23 | Download one short public video | Pass | 2026-11-26 | 720p max, merged with FFmpeg |
+| Remotion | 4.0.547 (Node 26.13.1) | Render a 3-second composition | Pass | 2026-11-26 | `SetupTest` composition, 1080x1920. Official Remotion agent skills installed in `remotion/.claude/skills` |
+| HyperFrames | 0.9.99 (Claude Code plugin) | Render a 3-second title card | Pass | 2026-11-26 | "Hello" card, 1080x1920, rendered in ~32 s |
+
+Other programs: Git 2.56.1, Node.js 26.13.1, npm 11.20.0, Python 3.12.10.
 
 ## Problems & fixes
 *Claude adds anything that went wrong during setup, and how it was fixed, so the next setup is faster.*
 
-- (none yet)
+- **Whisper crashed with `TypeError: open() got an unexpected keyword argument 'metadata_errors'`.**
+  The newest PyAV (19.x) doesn't work with faster-whisper 1.2.1. Fix: `python -m pip install "av<19"`.
+- **New programs not found right after install.** Instead of restarting Claude Code, reload PATH in the same
+  PowerShell window: `$env:Path = [Environment]::GetEnvironmentVariable('Path','Machine') + ';' + [Environment]::GetEnvironmentVariable('Path','User')`
+- **`claude` command not on PATH.** It lives at `%USERPROFILE%\.local\bin\claude.exe`; call it by full path for the plugin commands.
+- **Remotion without prompts:** `npx create-video@latest --yes --blank --skills remotion` creates the project and installs the official agent skills in one go.
+  The skills (in `remotion/.agents/`) are kept out of GitHub because they include icon images; on a new
+  computer, ask Claude to reinstall the Remotion agent skills listed in `remotion/skills-lock.json`.
+- **HyperFrames renders from the command line** with the plugin's bundled CLI:
+  `node <plugin folder>\skills\hyperframes\scripts\plugin-cli.mjs render --quality draft -o out.mp4`
+  (plugin folder: `%USERPROFILE%\.claude\plugins\cache\hyperframes\hyperframes\<version>`).
 
 ## Setting up on another computer
 1. Plug in My Passport (the folder is already on it), **or** download the setup from GitHub again (see README step 3).
