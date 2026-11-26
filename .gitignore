@@ -1,0 +1,57 @@
+# ------------------------------------------------------------
+# Video, audio and big files NEVER go to GitHub.
+# They live on the My Passport drive only.
+# ------------------------------------------------------------
+
+# Folder contents (the empty folders themselves are kept via .gitkeep)
+raw-footage/*
+references/*
+assets/*
+exports/*
+!raw-footage/.gitkeep
+!references/.gitkeep
+!assets/.gitkeep
+!exports/.gitkeep
+
+# Scratch space Claude uses while editing (transcripts, temp renders)
+_work/
+
+# Whisper model downloads (hundreds of MB)
+models/
+
+# Code dependencies (re-installed by /setup-tools)
+node_modules/
+.venv/
+__pycache__/
+remotion/out/
+.hyperframes/
+
+# Media files anywhere in the project, just in case
+*.mp4
+*.mov
+*.mkv
+*.avi
+*.webm
+*.m4v
+*.wav
+*.mp3
+*.m4a
+*.aac
+*.flac
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.psd
+*.ttf
+*.otf
+
+# Windows / Mac clutter
+Thumbs.db
+desktop.ini
+.DS_Store
+$RECYCLE.BIN/
+System Volume Information/
+
+# Personal Claude settings
+.claude/settings.local.json
