@@ -22,12 +22,12 @@ This lets you copy your setup onto the drive without typing Git commands.
 
 ### 3. Put the setup on your My Passport drive
 1. Plug in My Passport.
-2. In GitHub Desktop: **File → Clone repository → `ai-video-editor`**.
+2. In GitHub Desktop: **File → Clone repository → `video-editor`**.
 3. For **Local path**, click **Choose…** and select the **My Passport** drive (for example `E:\`).
-4. Click **Clone**. You now have an `ai-video-editor` folder on the drive.
+4. Click **Clone**. You now have an `video-editor` folder on the drive.
 
 ### 4. Open it in Claude Code
-Open Claude Code and choose the `ai-video-editor` folder on My Passport as the project folder.
+Open Claude Code and choose the `video-editor` folder on My Passport as the project folder.
 
 ### 5. Install the tools
 Type:
