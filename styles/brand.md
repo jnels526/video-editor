@@ -1,6 +1,6 @@
 # Style: brand (faceless personal brand)
 
-> Written on 2026-11-27 from Jas's brand brief and a 10-image moodboard of editorial magazines, film-photo collages and a video essay. These are still images, so there are no video references yet.
+> Written on 2026-11-27 from Jas's brand brief, a 10-image moodboard, 3 example images (one per format) and a list of creators to learn from. The moodboard covers editorial magazines, film-photo collages and a video essay. These are still images, so there are no video references yet.
 > Timing rules below are starting points. Refine them with `/learn-style brand <links>` once you find 3-5 video essays you like.
 > **The idea:** your page is a small independent publication. You're its narrator, researcher and editorial voice. People follow for **your perspective**, not generic information.
 > Claude adds your feedback to **Do / Don't** after each edit, so the style improves over time.
@@ -78,6 +78,29 @@
 ## Ending
 - End on **your takeaway**, one sentence that is your perspective, shown as a pull-quote card
 - Then a 1.5s end card in the same layout every time: the series name or page name as a headline and "No. __" as a kicker. Don't use "like and subscribe". At most add a soft line such as "more essays like this on the page".
+
+## Per-format looks (from the 3 example images)
+- **Mini-documentary (teach)**: a gritty night documentary still, darkened (about -30% exposure) with a green or teal cast. The title card is a distressed, stencil-style white headline in all caps, about 150px, centered at about 62% from the top. Under it goes a one-line subtitle in clean white sans, about 46px, sentence case, explaining the story ("Residents reflect on the decay and collapse of..."). The image is real place footage, not stock. (example: "Sinking City" documentary cover)
+- **Editorial essay (opinion)**: a bold cut-paper collage with black-and-white cut-out photos of people and buildings, flat burgundy and green shapes (the brand version of the example's red and blue), hand-drawn marks and lines, and protest-sign style lettering. The headline is a tall condensed sans in all caps with one line in a contrast color. A small black label box holds the byline. Use this collage look for the title card and 1-2 key moments, then cut to simpler footage. (example: "In These Times" magazine cover)
+- **Visual diary (story)**: a warm, sunny, overexposed POV looking down: coffee in hand, your shoes, your shadow on brick. Warm and soft with lifted highlights and golden light. Keep the text minimal, one short line in a serif italic. (example: POV coffee walk)
+
+## Creators to learn from (influences, not templates)
+Mostly long-form YouTube voice-led creators. They're chosen for their storytelling and identity, not their production level. Don't copy their titles, music, graphics or catchphrases.
+
+| Creator | Borrow this |
+|---|---|
+| **Pursuit of Wonder** | Intellectual curiosity: everyday life turned into philosophical questions; calm, reflective narration |
+| **James Jani** | Research and narrative structure: build an argument step by step, with a reveal at the end |
+| **Aperture** | Visual identity and atmosphere: abstract questions made emotional; consistent cinematic mood |
+| **Half as Interesting** | Accessible explanations and humor: an unusual question about an ordinary thing, answered with jokes along the way |
+| Sisyphus 55 | A recognizable personality even with simple visuals |
+| ColdFusion | Credibility and a steady, recognizable narrator voice |
+| How Money Works | Connecting everyday decisions to bigger systems |
+| Dodford | Short-form pacing: archival footage, interview clips, music and typography moving together |
+
+**The brand in one line:** somewhere between an independent digital magazine, a curious friend's commentary and a mini-documentary channel. What makes it different is your personal experience and your analysis.
+
+**Next step:** watch Pursuit of Wonder, Aperture and James Jani for 30-45 minutes. Notice how they open, how conversational they sound, how often the visuals change, how they bring in research without sounding academic, and what makes you keep watching. Save 3-5 videos you love and run `/learn-style brand <links>` to turn them into exact timing and caption rules.
 
 ## Do / Don't
 *Your corrections, saved as rules. Never deleted, only added to or refined.*
