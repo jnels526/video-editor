@@ -12,9 +12,9 @@ in plain English, give one step at a time, and never assume they know Git or the
 ## Folders
 | Folder | Contents | In GitHub? |
 |---|---|---|
-| `raw-footage/` | Original clips from the owner (optionally in `gym/`, `travel/`, `history/` subfolders) | No |
+| `raw-footage/` | Original clips from the owner (optionally in `gym/`, `travel/`, `history/`, `brand/` subfolders) | No |
 | `references/<style>/` | Videos whose style the owner likes, one subfolder per style (downloaded with yt-dlp) | No |
-| `styles/` | One style guide per kind of video: `history.md`, `gym.md`, `travel.md` | Yes |
+| `styles/` | One style guide per kind of video: `history.md`, `gym.md`, `travel.md`, `brand.md` | Yes |
 | `assets/` | Music, sound effects, fonts, logos | No |
 | `exports/` | Finished videos | No |
 | `_work/` | Scratch space: transcripts, cut lists, test renders. Create it if it doesn't exist | No |

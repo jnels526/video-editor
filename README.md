@@ -53,7 +53,7 @@ Put music tracks, sound effects, logos or fonts you're allowed to use into the `
 ## Editing a video (every time)
 
 1. **Copy your clip** into the `raw-footage` folder on My Passport. Short clips (30-90 seconds) work best at first.
-   Tip: put it in `raw-footage\gym`, `raw-footage\travel` or `raw-footage\history` and Claude picks that style automatically.
+   Tip: put it in `raw-footage\gym`, `raw-footage\travel`, `raw-footage\history` or `raw-footage\brand` and Claude picks that style automatically.
 2. Type **`/rough-cut`** (or `/rough-cut gym` to choose the style yourself). Claude transcribes the clip and shows a list of proposed cuts.
    Reply **"approved"**, or say what to change, for example "keep #3" or "cut the part about my cat".
 3. Type **`/render`**. Claude adds captions, zooms, graphics and music in your style, checks the result,
@@ -80,7 +80,7 @@ Only text files upload. Video is blocked automatically.
 | `references/` | Videos you like, one folder per style, used to learn each style |
 | `assets/` | Music, sound effects, fonts, logos |
 | `exports/` | Finished videos (`name - v1.mp4`, `v2`…) |
-| `styles/` | Your style guides (history, gym, travel). Each grows with every bit of feedback |
+| `styles/` | Your style guides (history, gym, travel, brand). Each grows with every bit of feedback |
 | `PROMPTS.md` | The 5 commands and the full prompts behind them |
 | `SETUP.md` | What's installed, and test results |
 | `CLAUDE.md` | Rules Claude always follows in this folder |
