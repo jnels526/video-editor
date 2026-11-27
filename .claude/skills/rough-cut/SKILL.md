@@ -12,7 +12,8 @@ Use the file if given, otherwise the newest video in `raw-footage/` (including i
 
 **Pick the style** (see CLAUDE.md rule 6): the style named in $ARGUMENTS, otherwise the clip's subfolder
 (`raw-footage/gym/` means `styles/gym.md`), otherwise ask. Say: "Using the **<style>** style."
-Read `styles/<style>.md` before choosing cuts.
+Read `styles/<style>.md` and `styles/storytelling.md` before choosing cuts.
+At the top of the cut list, write the story in 3 lines (character, tension, payoff), and say which moment you'll open on as the hook.
 **Never change the original.** Everything goes in `_work/<clip name>/`.
 
 ## 2. Transcribe

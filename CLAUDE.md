@@ -33,6 +33,7 @@ in plain English, give one step at a time, and never assume they know Git or the
    Use the style the owner names. Otherwise use the subfolder the clip is in (`raw-footage/gym/` means `styles/gym.md`).
    Otherwise ask which style to use, listing the files in `styles/`. Always tell the owner which style you're using.
    If that style file is still empty, say so and suggest `/learn-style <style>`.
+   Always also follow `styles/storytelling.md` (character, tension, payoff; peak-moment hooks; story loops).
 7. **Save disk space:** after an export is approved, offer to delete that video's `_work/` files.
    Use the `small` Whisper model unless the owner asks for better accuracy.
 8. When the owner gives feedback ("captions too big", "cuts feel rushed"), turn it into a

@@ -25,7 +25,7 @@ Follow the style file exactly:
   and HyperFrames for one-off animated graphics and title cards.
 - **Music**: only from `assets/`. Duck it under the voice (sidechain compression or about -18 to -22 dB under speech).
   If `assets/` has no music, ask the owner instead of adding any.
-- **Hook**: make the first 3 seconds match the hook rules in the style file.
+- **Hook**: make the first 3 seconds match the hook rules in the style file, and stack a visual and a text hook as `styles/storytelling.md` describes.
 - **Music-driven styles**: put the cuts on the beat of the chosen track where the style says so.
 
 ## 3. Final mix

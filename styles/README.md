@@ -7,6 +7,7 @@ Each file here is one editing style. Claude picks one for every edit.
 | `history.md` | History storytelling: talking to camera with archival photos and maps |
 | `gym.md` | Gym: women doing hard things, plus tips to succeed |
 | `travel.md` | Travel and faceless videos |
+| `storytelling.md` | Storytelling rules used for **every** video (hooks, tension, payoff) |
 | `_template.md` | Blank starting point for a new style |
 
 ## How Claude picks the style
