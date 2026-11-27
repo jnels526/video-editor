@@ -1,4 +1,4 @@
-# My Style Guide
+# Style: history storytelling
 
 > Learned on 2026-11-26 from 9 reference videos in `references/` (reference8.mp4 was an incomplete download and was skipped).
 > The theme across them: **history storytelling.** A host talks to camera, and archival photos, maps and old newspapers cover most of the runtime.

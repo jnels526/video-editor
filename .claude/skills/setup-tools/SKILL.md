@@ -46,7 +46,7 @@ Put all test output in `_work/setup-test/`. Delete it at the end.
 |---|---|
 | FFmpeg | Generate a 3-second 1080x1920 test video with a tone: `ffmpeg -f lavfi -i testsrc2=s=1080x1920:d=3 -f lavfi -i sine=d=3 -shortest _work/setup-test/ffmpeg.mp4` |
 | Whisper | Run `python tools/transcribe.py <a file> --clip 5 --model base --out _work/setup-test/whisper`. If the owner has no clip yet, generate speech with Windows text-to-speech (System.Speech) to a WAV and transcribe that. Confirm it finds word timestamps |
-| yt-dlp | Download one short public video at 720p max into `_work/setup-test/` (`-f "bv*[height<=720]+ba/b[height<=720]"`) |
+| yt-dlp | Download one short public video at 720p max into `_work/setup-test/` (`-S "res:720"`) |
 | Remotion | Render a 3-second test composition to `_work/setup-test/remotion.mp4` |
 | HyperFrames | Make a 3-second "Hello" title card and render it to `_work/setup-test/hyperframes.mp4` |
 

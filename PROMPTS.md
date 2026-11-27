@@ -23,9 +23,10 @@ seconds of audio, download one short public video. Never modify originals; work 
 Document everything in SETUP.md.
 ```
 
-### 2. Style (paste 3-5 links)
+### 2. Style (a style name plus 3-5 links)
 ```
-Download these into references/ with yt-dlp: [links]. Analyze them and write STYLE.md covering
+This style is called [gym / travel / history]. Download these into references/[style]/ with yt-dlp: [links].
+Analyze them and write styles/[style].md covering
 pacing and cut frequency, caption font/size/position/words per line, color, zooms, graphics and
 transitions, music and sound effects, and how the first 3 seconds hook. Cite the source video and
 timestamp for each rule. Inspire, don't copy.
@@ -41,21 +42,21 @@ Wait for my approval.
 
 ### 4. Render with style
 ```
-Apply only the approved cuts with 2-4 frame audio crossfades. Then follow STYLE.md: captions,
+Apply only the approved cuts with 2-4 frame audio crossfades. Then follow the style file I chose in styles/: captions,
 graphics, music ducked under my voice, 9:16 1080x1920. Mix to -14 LUFS. QC for caption sync,
 safe zones and audio pops. Show stills and the cut list, then export to exports/.
 ```
 
 ### 5. Lock it in
 ```
-Save this workflow and STYLE.md as a skill called my-reel-edit. Add my corrections as Do/Don't rules.
+Save this workflow and my style files as a skill called my-reel-edit. Add my corrections as Do/Don't rules.
 ```
 
 ---
 
 ## Giving feedback (the most important part)
 After each render, describe what you'd change in plain words. Claude turns each note into a
-permanent rule in STYLE.md. Examples:
+permanent rule in that video's style file. Examples:
 - "The captions are too big and cover my face."
 - "Cuts feel rushed, leave a tiny breath between sentences."
 - "Music is too loud when I'm talking."
