@@ -7,7 +7,12 @@ argument-hint: "[optional: file name]"
 # Rough cut with an approval gate
 
 ## 1. Pick the clip
-Use $ARGUMENTS if given, otherwise the newest video in `raw-footage/`. Tell the owner which file you're using.
+$ARGUMENTS may hold a style name (`gym`, `travel`, `history` or any file in `styles/`) and/or a file name.
+Use the file if given, otherwise the newest video in `raw-footage/` (including its subfolders). Tell the owner which file you're using.
+
+**Pick the style** (see CLAUDE.md rule 6): the style named in $ARGUMENTS, otherwise the clip's subfolder
+(`raw-footage/gym/` means `styles/gym.md`), otherwise ask. Say: "Using the **<style>** style."
+Read `styles/<style>.md` before choosing cuts.
 **Never change the original.** Everything goes in `_work/<clip name>/`.
 
 ## 2. Transcribe
@@ -21,7 +26,10 @@ Also get the frame rate and length: `ffprobe -v error -show_entries stream=r_fra
 - **False starts**: sentences that are abandoned and restarted.
 - **Pauses over 0.4s**: shorten them to about 0.15s. Don't remove them completely, or the speech sounds robotic.
 - Dead air at the start and end: the video starts on the first word of the hook.
-- Follow the pacing rules in `STYLE.md` if it has any.
+- Follow the pacing rules in `styles/<style>.md`.
+- **Little or no speech** (a gym set, travel footage): the transcript can't drive the cuts. Instead, pick the strongest moments
+  (the hardest rep, the best view, clear movement) using stills every 0.5s and scene detection, and trim dead time between them.
+  Match the shot lengths in the style file, and mark these cuts "visual" in the Reason column.
 
 ## 4. Cutting rules
 - Never cut mid-word. Cut points sit in the gap between words, ideally at a breath or sentence end.
@@ -29,7 +37,7 @@ Also get the frame rate and length: `ffprobe -v error -show_entries stream=r_fra
 - Snap every cut point to the nearest frame.
 
 ## 5. Show the cut list and STOP
-Save `_work/<clip>/cutlist.json` (a list of segments to KEEP: `in`, `out` in seconds) and show the owner a table:
+Save `_work/<clip>/cutlist.json` (`"style": "<style>"` plus a list of segments to KEEP: `in`, `out` in seconds) and show the owner a table:
 
 | # | Remove from → to | What's said | Reason | Confidence |
 |---|---|---|---|---|
